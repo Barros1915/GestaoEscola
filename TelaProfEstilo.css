@@ -1,6 +1,7 @@
-
 body {
-    background-color: #ffffff;
+    background-color: #f2f2f2; /* Cor de fundo */
+    background-image: linear-gradient(to bottom, lightblue, #f2f2f2); /* Gradiente de cores */
+    background-attachment: fixed; /* Fixar o fundo para evitar rolagem */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -10,13 +11,7 @@ body {
     padding: 0;
   }
   
-  .login-container {
-    width: 300px;
-    padding: 20px;
-    background-image: linear-gradient(#f6f6f6, #e0e0e0);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
+
   
   .login-container h2 {
     text-align: center;
@@ -36,7 +31,7 @@ body {
     padding: 5px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #fff;
   }
   
@@ -71,3 +66,33 @@ body {
     text-decoration: underline;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   }    
+
+  .login-container {
+    width: 300px;
+    padding: 50px;
+    background-color: rgba(246, 246, 246, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-left: auto;
+    margin-right: 150px; /* Ajuste essa margem conforme necessário */
+  }
+  
+
+  .image-container {
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .image-container p {
+    margin-top: 10px;
+  }
